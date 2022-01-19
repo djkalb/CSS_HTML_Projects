@@ -1,0 +1,20 @@
+<! DOCTYPE html>
+<html lang="en">
+		<head>
+			<meta charset="UTF-8">
+			<title>DOGS</title>
+		</head>
+		<body>
+			<nav>
+				<a href="dogs.html">dogs</a>
+				<a href="assignments.html">assignments</a>
+				<a href="dog_video.html">dog video</a>
+			</nav>
+			<iframe 
+			src="https://www.youtube.com/watch?v=hyPE15eWwi8"
+			width = "250"
+			height = "200">
+			</iframe>
+			<a href="https://www.youtube.com/watch?v=hyPE15eWwi8">dog video</a>
+		</body>
+</html>
