@@ -1,0 +1,18 @@
+table {
+border: 10px solid silver;
+color: gray;
+width: 100%
+}
+td:hover {
+	color: white;
+	background-color: orange;
+}
+tr, th {
+	font-size: medium;
+	font-weight: bold;
+	text-align: center;
+	border: 1px solid black;
+}
+td {
+	border: 1px solid black;
+}

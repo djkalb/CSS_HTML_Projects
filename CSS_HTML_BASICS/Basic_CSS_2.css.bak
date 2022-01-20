@@ -1,0 +1,7 @@
+p {
+	color: blue;
+	
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 60px 60px 100px grey;
+}
