@@ -1,0 +1,14 @@
+<! DOCTYPE html>
+<html lang="en">
+		<head>
+			<script >
+			
+			</script>
+		</head>
+		<body>
+		<p><font color = "green"><b>this <i>text</i> <u>had better</u> be green</b></p>
+		<p><font color="#3238a8" face="Impact" size= "6">this might be a color</font></p>
+		<img src = "..\images\pexels-valeria-boltneva-1805164.jpg" alt = "dog photo not bad">
+			
+		</body>
+</html>
