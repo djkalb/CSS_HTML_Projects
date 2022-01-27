@@ -1,7 +1,22 @@
-.red {
-    background-color: red;
+.container {
+    position: fixed;
+    top: 0;
+    background-color: rosybrown;
+    color: white;
+    width: 100%
 
 }
-.blue {
-    background-color: blue;
+.container:hover {
+    background-color: seagreen;
+}
+nav li{
+    display: inline;
+    padding: 0 25px;
+    
+}
+nav li:hover {
+    cursor: pointer;
+}
+div {
+    padding: 100% 100% 100% 100%
 }

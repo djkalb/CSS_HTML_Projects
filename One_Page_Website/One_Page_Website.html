@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href = "./css/one_page_website.css">
-
+		<script src="JS/one_page_website.js"></script>
 	</head>
 <body>
 	<!-- nav -->
@@ -23,9 +23,7 @@
 		<div id="home" >
 			<div>
 				<h1>Colonize Mars<h1>
-				<p>Earth is boring. To be honest we fucked it up pretty bad so far, but now we have a chance to start fresh. A world of limitless potential awaits you today!
-					
-				</p>
+				
 			</div>
 		<iframe width="560" height="315" src="https://www.youtube.com/embed/8DZl56tS9ko" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
@@ -34,17 +32,71 @@
 	<!-- end home -->
 	
 	<!-- gallery -->
-		<div id="gallery">
-			<div>
-					<div>
-						<h1>YOUR FUTURE HOME!</h1>
-					</div>
-				<img src="..\Projects\images\thumbnails\image_6.png" width="60%" height="60%" alt="mars 3d home">
-				<br>
-				<img src="..\Projects\images\thumbnails\image_7.png" width="60%" height="60%" alt="mars 3d home">
-				<br><br><br><br>
+	<!-- images to open lightbox-->
+		<div class = "row">
+			<div class="column">
+				<img  src="../Projects/images/thumbnails/image_4.png" onclick="openModal(); currentSlide(1)"
+				class="hover-shadow" alt="">
+			</div>
+			<div class="column">
+				<img  src="../Projects/images/thumbnails/image_5.png" onclick="openModal(); currentSlide(2)"
+				class="hover-shadow" alt="">
+			</div>
+			<div class="column">
+				<img  src="../Projects/images/thumbnails/image_6.png" onclick="openModal(); currentSlide(3)"
+				class="hover-shadow" alt="">
+			</div>
+			<div class="column">
+				<img  src="../Projects/images/thumbnails/image_7.png" onclick="openModal(); currentSlide(4)"
+				class="hover-shadow" alt="">
 			</div>
 		</div>
+		<!--the lightbox -->
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+				<div class="mySlides">
+					<div class="numbertext">1 / 4</div>
+					<img src = "../Projects/images/thumbnails/image_4.png" style="width: 100%">
+				</div>
+				<div class="mySlides">
+					<div class="numbertext">2 / 4</div>
+					<img src = "../Projects/images/thumbnails/image_5.png" style="width: 100%">
+				</div>
+				<div class="mySlides">
+					<div class="numbertext">3 / 4</div>
+					<img src = "../Projects/images/thumbnails/image_6.png" style="width: 100%">
+				</div>
+				<div class="mySlides">
+					<div class="numbertext">4 / 4</div>
+					<img src = "../Projects/images/thumbnails/image_7.png" style="width: 100%">
+				</div>
+			
+				<!-- Forward and back controls-->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+				
+				<!-- thumbnail controls-->
+				<div class="column">
+					<img class="demo" src="../Projects/images/thumbnails/image_4.png" onclick="currentSlide(1)" alt="space">
+
+				</div>
+				<div class="column">
+					<img class="demo" src="../Projects/images/thumbnails/image_5.png" onclick="currentSlide(2)" alt="space">
+					
+				</div>
+				<div class="column">
+					<img class="demo" src="../Projects/images/thumbnails/image_6.png" onclick="currentSlide(3)" alt="space">
+					
+				</div>
+				<div class="column">
+					<img class="demo" src="../Projects/images/thumbnails/image_7.png" onclick="currentSlide(4)" alt="space">
+					
+				</div>
+		</div>
+	</div>
+	
 	<!-- end Gallery-->
 	
 	<!-- Application -->
@@ -63,7 +115,7 @@
 					<input type = "submit" value = "submit"></input>
 				</form>
 	
-	
+	</div>
 	<!-- end application-->
 	<footer>
 		<p>this site is a registered &reg; and cannot be copied or infringed upon in any way.</p>
